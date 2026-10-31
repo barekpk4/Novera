@@ -1,0 +1,525 @@
+
+/* =====================================
+   Novera Agro Farm - Premium Services
+===================================== */
+
+.services-page {
+  --agro-green: #176b3a;
+  --agro-dark: #104b2b;
+  --agro-light: #eff7f0;
+  --agro-text: #26352b;
+  --agro-muted: #647168;
+
+  width: 100%;
+  color: var(--agro-text);
+  background: #f7faf7;
+  font-family: Arial, sans-serif;
+  overflow-wrap: break-word;
+}
+
+.services-page *,
+.services-page *::before,
+.services-page *::after {
+  box-sizing: border-box;
+}
+
+/* Hero */
+
+.services-page .services-hero {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 310px;
+  padding: 55px 24px;
+  overflow: hidden;
+  text-align: center;
+  color: #fff;
+
+  background:
+    radial-gradient(
+      circle at 85% 15%,
+      rgba(106, 170, 105, 0.25),
+      transparent 35%
+    ),
+    linear-gradient(135deg, #103f25, #176b3a 65%, #225c36);
+}
+
+.services-page .services-hero::before {
+  content: "";
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  border: 1px solid rgba(255, 255, 255, 0.13);
+  border-radius: 50%;
+  right: -65px;
+  bottom: -120px;
+  pointer-events: none;
+}
+
+.services-page .services-hero-content {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 760px;
+}
+
+.services-page .services-eyebrow {
+  display: inline-block;
+  margin-bottom: 14px;
+  color: #d2edc9;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+.services-page .services-hero h1 {
+  margin: 0 0 16px;
+  color: #fff;
+  font-size: clamp(36px, 5vw, 54px);
+  font-weight: 800;
+  line-height: 1.15;
+}
+
+.services-page .services-hero p {
+  max-width: 650px;
+  margin: 0 auto 25px;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.services-page .services-hero-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  min-height: 46px;
+  padding: 12px 23px;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  border-radius: 30px;
+  background: #fff;
+  color: var(--agro-dark);
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.services-page .services-hero-btn:hover {
+  background: #eaf5e8;
+  transform: translateY(-2px);
+}
+
+/* Main container */
+
+.services-page .services-container {
+  width: 100%;
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 65px 24px;
+}
+
+/* Section heading */
+
+.services-page .services-heading {
+  max-width: 690px;
+  margin: 0 auto 38px;
+  text-align: center;
+}
+
+.services-page .section-label {
+  display: inline-block;
+  margin-bottom: 12px;
+  color: var(--agro-green);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.services-page .services-heading h2,
+.services-page .services-cta h2 {
+  margin: 0 0 14px;
+  color: var(--agro-dark);
+  font-size: clamp(26px, 3vw, 34px);
+  font-weight: 800;
+  line-height: 1.3;
+}
+
+.services-page .services-heading > p {
+  margin: 0;
+  color: var(--agro-muted);
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+/* Responsive grid */
+
+.services-page .services-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 28px;
+  align-items: stretch;
+}
+
+/* Cards */
+
+.services-page .service-card {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid #e5eee5;
+  border-radius: 16px;
+  box-shadow: 0 7px 24px rgba(24, 65, 37, 0.06);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.services-page .service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 34px rgba(24, 65, 37, 0.12);
+}
+
+/* Image */
+
+.services-page .service-image-wrap {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+  background: #e7efe6;
+}
+
+.services-page .service-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.45s ease;
+}
+
+.services-page .service-card:hover .service-image {
+  transform: scale(1.04);
+}
+
+.services-page .service-number {
+  position: absolute;
+  left: 16px;
+  top: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border: 1px solid rgba(255, 255, 255, 0.65);
+  border-radius: 12px;
+  background: rgba(16, 75, 43, 0.92);
+  color: #fff;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+/* Card content */
+
+.services-page .service-content {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 25px;
+}
+
+.services-page .service-tag {
+  display: inline-block;
+  margin-bottom: 12px;
+  color: var(--agro-green);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1.3px;
+  line-height: 1.5;
+}
+
+.services-page .service-content h3 {
+  margin: 0 0 14px;
+  color: var(--agro-dark);
+  font-size: 23px;
+  font-weight: 800;
+  line-height: 1.4;
+}
+
+.services-page .service-content p {
+  width: 100%;
+  margin: 0 0 14px;
+  color: #59655c;
+  font-size: 14px;
+  line-height: 1.85;
+}
+
+.services-page .service-content .service-bangla {
+  padding-top: 13px;
+  border-top: 1px solid #edf1ed;
+  color: #47574a;
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+/* WhatsApp order button */
+
+.services-page .service-order-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  min-height: 48px;
+  margin-top: auto;
+  padding: 12px 16px;
+  border: 1px solid var(--agro-green);
+  border-radius: 9px;
+  background: var(--agro-green);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.services-page .service-order-btn:hover {
+  background: var(--agro-dark);
+  border-color: var(--agro-dark);
+  color: #fff;
+}
+
+.services-page .whatsapp-icon {
+  font-size: 20px;
+  line-height: 1;
+}
+
+.services-page .order-arrow {
+  margin-left: auto;
+  font-size: 20px;
+}
+
+/* Bottom CTA */
+
+.services-page .services-cta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+  margin-top: 55px;
+  padding: 32px;
+  border: 1px solid #dcebdd;
+  border-radius: 16px;
+  background: var(--agro-light);
+}
+
+.services-page .services-cta > div {
+  min-width: 0;
+}
+
+.services-page .services-cta h2 {
+  font-size: 25px;
+}
+
+.services-page .services-cta p {
+  max-width: 620px;
+  margin: 0;
+  color: var(--agro-muted);
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.services-page .services-cta-btn {
+  display: inline-flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  min-height: 48px;
+  padding: 13px 20px;
+  border-radius: 9px;
+  background: var(--agro-dark);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background 0.2s ease;
+}
+
+.services-page .services-cta-btn:hover {
+  background: var(--agro-green);
+  color: #fff;
+}
+
+/* Tablet */
+
+@media (max-width: 900px) {
+  .services-page .services-container {
+    padding: 48px 20px;
+  }
+
+  .services-page .services-grid {
+    gap: 20px;
+  }
+
+  .services-page .service-image-wrap {
+    height: 220px;
+  }
+
+  .services-page .service-content {
+    padding: 20px;
+  }
+
+  .services-page .service-content h3 {
+    font-size: 21px;
+  }
+
+  .services-page .services-cta {
+    padding: 25px;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 650px) {
+  .services-page .services-hero {
+    min-height: auto;
+    padding: 48px 20px;
+  }
+
+  .services-page .services-eyebrow {
+    font-size: 10px;
+    letter-spacing: 2px;
+  }
+
+  .services-page .services-hero h1 {
+    font-size: 36px;
+  }
+
+  .services-page .services-hero p {
+    font-size: 14px;
+    line-height: 1.8;
+  }
+
+  .services-page .services-container {
+    padding: 38px 16px;
+  }
+
+  .services-page .services-heading {
+    margin-bottom: 25px;
+  }
+
+  .services-page .services-heading h2 {
+    font-size: 27px;
+  }
+
+  .services-page .services-heading > p {
+    font-size: 14px;
+  }
+
+  .services-page .services-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 22px;
+  }
+
+  .services-page .service-card {
+    border-radius: 13px;
+  }
+
+  .services-page .service-image-wrap {
+    height: 235px;
+  }
+
+  .services-page .service-content {
+    padding: 20px;
+  }
+
+  .services-page .service-content h3 {
+    font-size: 22px;
+  }
+
+  .services-page .service-content p {
+    font-size: 14px;
+    line-height: 1.85;
+  }
+
+  .services-page .service-content .service-bangla {
+    font-size: 14px;
+    line-height: 1.9;
+  }
+
+  .services-page .service-order-btn {
+    margin-top: 5px;
+    min-height: 48px;
+  }
+
+  .services-page .services-cta {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 20px;
+    margin-top: 35px;
+    padding: 23px 19px;
+    text-align: center;
+  }
+
+  .services-page .services-cta h2 {
+    font-size: 23px;
+  }
+
+  .services-page .services-cta p {
+    font-size: 14px;
+  }
+
+  .services-page .services-cta-btn {
+    width: 100%;
+  }
+}
+
+/* Small Mobile */
+
+@media (max-width: 360px) {
+  .services-page .services-container {
+    padding-right: 12px;
+    padding-left: 12px;
+  }
+
+  .services-page .services-hero {
+    padding: 38px 15px;
+  }
+
+  .services-page .services-hero h1 {
+    font-size: 31px;
+  }
+
+  .services-page .service-image-wrap {
+    height: 200px;
+  }
+
+  .services-page .service-content {
+    padding: 16px;
+  }
+
+  .services-page .service-content h3 {
+    font-size: 20px;
+  }
+
+  .services-page .service-content p,
+  .services-page .service-content .service-bangla {
+    font-size: 13px;
+  }
+}
+
+/* Respect reduced motion */
+
+@media (prefers-reduced-motion: reduce) {
+  .services-page *,
+  .services-page *::before,
+  .services-page *::after {
+    transition: none !important;
+  }
+}

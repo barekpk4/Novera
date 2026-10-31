@@ -1,0 +1,487 @@
+
+/* =========================
+   ABOUT PAGE
+========================= */
+
+.about-page {
+  background: #f7faf7;
+  color: #26372d;
+  overflow: hidden;
+}
+
+.about-container {
+  padding-top: 70px;
+  padding-bottom: 75px;
+}
+
+.section-tag {
+  display: inline-block;
+  color: #21864b;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}
+
+/* Hero */
+
+.about-hero {
+  position: relative;
+  width: 100%;
+  height: 450px;
+  overflow: hidden;
+  background: #183e29;
+}
+
+.about-hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  filter: brightness(55%);
+}
+
+.about-hero-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+  text-align: center;
+  color: #fff;
+}
+
+.about-hero-overlay .section-tag {
+  color: #b9f4c9;
+}
+
+.about-hero-overlay h1 {
+  font-size: clamp(32px, 5vw, 56px);
+  font-weight: 800;
+  margin-bottom: 15px;
+  line-height: 1.2;
+}
+
+.about-hero-overlay p {
+  max-width: 650px;
+  font-size: 17px;
+  line-height: 1.8;
+  margin: 0;
+}
+
+/* Introduction */
+
+.about-intro {
+  max-width: 850px;
+  margin: 0 auto 50px;
+  text-align: center;
+}
+
+.about-intro h2,
+.about-details h2,
+.commitment-section h2,
+.founder-content h2,
+.about-contact h2 {
+  color: #173f29;
+  font-size: clamp(25px, 3vw, 34px);
+  font-weight: 750;
+  line-height: 1.35;
+  margin-bottom: 18px;
+}
+
+.about-intro p,
+.info-card p,
+.commitment-section p,
+.founder-content > p,
+.about-contact > p {
+  color: #657268;
+  font-size: 15px;
+  line-height: 1.9;
+  margin-bottom: 0;
+}
+
+/* Mission and Vision */
+
+.mission-vision {
+  margin-bottom: 65px;
+}
+
+.info-card {
+  height: 100%;
+  padding: 35px;
+  background: #fff;
+  border: 1px solid #e5eee6;
+  border-radius: 18px;
+  box-shadow: 0 8px 28px rgba(25, 65, 39, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.info-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 35px rgba(25, 65, 39, 0.10);
+}
+
+.info-icon {
+  width: 58px;
+  height: 58px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e8f5eb;
+  color: #21864b;
+  border-radius: 15px;
+  font-size: 27px;
+  margin-bottom: 22px;
+}
+
+.info-card h3 {
+  color: #173f29;
+  font-size: 23px;
+  font-weight: 750;
+  margin-bottom: 12px;
+}
+
+/* Services and Why Choose Us */
+
+.about-details {
+  margin-bottom: 65px;
+}
+
+.detail-card {
+  height: 100%;
+  background: #fff;
+  border: 1px solid #e4eee5;
+  border-radius: 18px;
+  padding: 35px;
+  box-shadow: 0 8px 28px rgba(25, 65, 39, 0.04);
+}
+
+.why-card {
+  background: #eff7f0;
+}
+
+.feature-list {
+  list-style: none;
+  padding: 0;
+  margin: 25px 0 0;
+}
+
+.feature-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  color: #4c5d51;
+  font-size: 14px;
+  line-height: 1.8;
+  margin-bottom: 17px;
+}
+
+.feature-list li:last-child {
+  margin-bottom: 0;
+}
+
+.feature-list i {
+  color: #21864b;
+  font-size: 18px;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+/* Commitment */
+
+.commitment-section {
+  display: flex;
+  align-items: flex-start;
+  gap: 25px;
+  padding: 38px;
+  margin-bottom: 65px;
+  background: #eaf5ec;
+  border-left: 5px solid #27854a;
+  border-radius: 16px;
+}
+
+.commitment-icon {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  background: #fff;
+  color: #21864b;
+  border-radius: 16px;
+  font-size: 28px;
+}
+
+/* Founder */
+
+.founder-section {
+  margin-bottom: 75px;
+}
+
+.founder-card {
+  display: grid;
+  grid-template-columns: 300px minmax(0, 1fr);
+  align-items: center;
+  gap: 40px;
+  padding: 40px;
+  background: #fff;
+  border: 1px solid #e3ede4;
+  border-radius: 22px;
+  box-shadow: 0 12px 35px rgba(25, 65, 39, 0.07);
+}
+
+.founder-image-wrapper {
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 9px;
+  border: 2px solid #cce7d1;
+  border-radius: 22px;
+}
+
+.founder-image {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 15px;
+}
+
+.founder-content h2 {
+  margin-bottom: 14px;
+}
+
+.founder-content h3 {
+  color: #21864b;
+  font-size: 23px;
+  font-weight: 750;
+  margin-bottom: 7px;
+}
+
+.founder-role {
+  color: #7a887e;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 20px !important;
+}
+
+.founder-signature {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  color: #21864b;
+  font-size: 14px;
+  font-weight: 700;
+  margin-top: 22px;
+}
+
+.founder-signature i {
+  font-size: 20px;
+}
+
+/* Contact */
+
+.about-contact {
+  padding: 45px 35px;
+  text-align: center;
+  background: #fff;
+  border: 1px solid #e3ede4;
+  border-radius: 22px;
+  box-shadow: 0 10px 30px rgba(25, 65, 39, 0.05);
+}
+
+.about-contact > p {
+  max-width: 620px;
+  margin: 0 auto;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  margin: 35px 0;
+  text-align: left;
+}
+
+.contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  min-width: 0;
+  padding: 20px;
+  background: #f4f9f4;
+  border-radius: 14px;
+}
+
+.contact-item > i {
+  color: #21864b;
+  font-size: 23px;
+  flex-shrink: 0;
+}
+
+.contact-item h4 {
+  color: #173f29;
+  font-size: 15px;
+  font-weight: 750;
+  margin-bottom: 7px;
+}
+
+.contact-item a,
+.contact-item p {
+  color: #657268;
+  font-size: 13px;
+  line-height: 1.7;
+  overflow-wrap: anywhere;
+  margin: 0;
+  text-decoration: none;
+}
+
+.contact-item a:hover {
+  color: #21864b;
+}
+
+.contact-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 14px 25px;
+  color: #fff;
+  background: #21864b;
+  border: 2px solid #21864b;
+  border-radius: 9px;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background 0.25s ease, transform 0.25s ease;
+}
+
+.contact-button:hover {
+  color: #fff;
+  background: #176b39;
+  border-color: #176b39;
+  transform: translateY(-2px);
+}
+
+/* Responsive */
+
+@media (max-width: 991px) {
+  .about-hero {
+    height: 380px;
+  }
+
+  .founder-card {
+    grid-template-columns: 240px minmax(0, 1fr);
+    gap: 28px;
+    padding: 30px;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-item {
+    align-items: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .about-hero {
+    height: 320px;
+  }
+
+  .about-hero-overlay {
+    padding: 20px;
+  }
+
+  .about-hero-overlay p {
+    font-size: 14px;
+  }
+
+  .about-container {
+    padding-top: 45px;
+    padding-bottom: 45px;
+  }
+
+  .about-intro {
+    margin-bottom: 35px;
+  }
+
+  .mission-vision,
+  .about-details {
+    margin-bottom: 45px;
+  }
+
+  .info-card,
+  .detail-card {
+    padding: 25px;
+  }
+
+  .commitment-section {
+    flex-direction: column;
+    gap: 18px;
+    padding: 26px;
+    margin-bottom: 45px;
+  }
+
+  .founder-section {
+    margin-bottom: 45px;
+  }
+
+  .founder-card {
+    grid-template-columns: 1fr;
+    gap: 25px;
+    padding: 25px;
+  }
+
+  .founder-image-wrapper {
+    max-width: 230px;
+  }
+
+  .founder-content {
+    text-align: center;
+  }
+
+  .founder-signature {
+    justify-content: center;
+  }
+
+  .about-contact {
+    padding: 30px 20px;
+  }
+
+  .contact-grid {
+    margin: 25px 0;
+  }
+
+  .contact-button {
+    width: 100%;
+    padding: 14px 15px;
+  }
+}
+
+@media (max-width: 400px) {
+  .about-hero {
+    height: 290px;
+  }
+
+  .info-card,
+  .detail-card,
+  .founder-card {
+    padding: 20px;
+  }
+
+  .about-intro h2,
+  .about-details h2,
+  .commitment-section h2,
+  .founder-content h2,
+  .about-contact h2 {
+    font-size: 24px;
+  }
+}

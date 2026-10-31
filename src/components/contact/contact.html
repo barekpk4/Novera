@@ -1,0 +1,107 @@
+<section class="contact-section py-5">
+    <div class="container">
+
+        <div class="text-center mb-3">
+            <h1>Contact Us</h1>
+            <p class="mb-1">We're always here to help. Feel free to contact Novera Agro Farm anytime with your questions, suggestions, or any assistance you may need.</p>
+            <p>আমরা সবসময় আপনার পাশে আছি। যেকোনো প্রশ্ন, পরামর্শ বা প্রয়োজনে নির্দ্বিধায় নভেরা অ্যাগ্রো ফার্মের সাথে যোগাযোগ করুন।</p>
+        </div>
+
+        <div class="row g-4">
+
+            <!-- Contact Information -->
+            <div class="col-lg-5">
+                <div class="contact-info">
+                    <h3>Get In Touch</h3>
+
+                    <div class="info-box">
+                        <h5>📞 Phone</h5>
+                        <p>+880 1795180582</p>
+                    </div>
+
+                    <div class="info-box">
+                        <h5>📧 Email</h5>
+                        <p>info@agronovera.com</p>
+                    </div>
+
+                    <div class="info-box">
+                        <h5>📍 Address</h5>
+                        <p>Nagor MajhGram, Singra, Natore-6400, Rajshahi, Bangladesh</p>
+                    </div>
+
+                    <div class="info-box">
+                        <h5>🕒 Business Hours</h5>
+                        <p>Saturday - Thursday<br>9:00 AM - 6:00 PM</p>
+                    </div>
+
+                    <div class="info-box">
+                        <h5>💬 WhatsApp</h5>
+                        <p>+880 1XXXXXXXXX</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="col-lg-7">
+                <div class="contact-form">
+                    <h3 class="mb-4">Send Message</h3>
+
+                    <form [formGroup]="contactFormDemo" (ngSubmit)="onSubmit()">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <input type="text" class="form-control" id="yourName" formControlName="yourName"
+                                    placeholder="Your Name">
+                            </div>
+
+                            <div class="col-md-6 mb-3">
+                                <input type="email" class="form-control" id="email" formControlName="email"
+                                    placeholder="Email Address">
+                            </div>
+
+                            <div class="mb-3">
+                                <input type="tel" class="form-control" id="phone" formControlName="phone"
+                                    placeholder="Phone Number">
+                            </div>
+
+                            <div class="mb-3">
+                                <input type="text" class="form-control" id="subject" formControlName="subject"
+                                    placeholder="Subject">
+                            </div>
+
+                            <div class="mb-3">
+                                <textarea class="form-control" rows="5" id="message" formControlName="message"
+                                    placeholder="Write Your Message"></textarea>
+                            </div>
+                        <button class="btn saveButton btn-primary" type="submit" [disabled]="btnStatus==='Sending...'">
+                        
+                            {{btnStatus}}
+                        
+                        </button>
+                            <button (click)="reset()" class="btn btn-warning" style="margin-left: 4px;">Reset</button>
+
+                        </div>
+                    </form>
+
+
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Google Map -->
+        <div class="map-section mt-5">
+            <h3 class="text-center mb-4">Our Location</h3>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58101.38018081962!2d89.05613550000001!3d24.473803299999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39fc1500160f7e71%3A0xce4adde295d0c4e3!2sUttara%20Agro%20Farm!5e0!3m2!1sen!2sbd!4v1782747061497!5m2!1sen!2sbd"
+ width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+          
+        </div>
+
+    </div>
+</section>
+
+
+
+ 
+
+
+

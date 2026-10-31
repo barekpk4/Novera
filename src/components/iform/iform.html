@@ -1,0 +1,47 @@
+
+
+     <div class="col-lg-7">
+                <div class="contact-form">
+                    <h3 class="mb-4">Send Message</h3>
+
+                    <form [formGroup]="contactFormDemo" (ngSubmit)="onSubmit()">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <input type="text" class="form-control" id="yourName" formControlName="yourName"
+                                    placeholder="Your Name">
+                            </div>
+
+                            <div class="col-md-6 mb-3">
+                                <input type="email" class="form-control" id="email" formControlName="email"
+                                    placeholder="Email Address">
+                            </div>
+
+                            <div class="mb-3">
+                                <input type="tel" class="form-control" id="phone" formControlName="phone"
+                                    placeholder="Phone Number">
+                            </div>
+
+                            <div class="mb-3">
+                                <input type="text" class="form-control" id="subject" formControlName="subject"
+                                    placeholder="Subject">
+                            </div>
+
+                            <div class="mb-3">
+                                <textarea class="form-control" rows="5" id="message" formControlName="message"
+                                    placeholder="Write Your Message"></textarea>
+                            </div>
+                            <button class="btn saveButton btn-primary" type="submit" [disabled]="btnStatus==='Sending...'">
+                            
+                                {{btnStatus}}
+                            
+                            </button>
+                            <button type="button" (click)="reset()" class="btn btn-warning" style="margin-left: 4px;">Reset</button>
+
+                        </div>
+                    </form>
+
+
+                </div>
+            </div>
+
+        
